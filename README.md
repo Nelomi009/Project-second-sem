@@ -72,36 +72,3 @@ RpgCharacterEditor
 ├── Character.cs
 ├── CharacterMemento.cs
 └── History.cs
-GitHub Flow
-
-При разработке проекта использовался GitHub Flow.
-
-Этапы работы:
-
-Создание новой ветки
-Реализация функционала
-Commit изменений
-Создание Pull Request
-Слияние изменений в main
-
-Пример веток:
-
-feature/character-class
-feature/history-system
-feature/undo-function
-feature/readme
-Технологии
-C#
-.NET Console Application
-Stack
-Object-Oriented Programming
-Memento Pattern
-Возможные улучшения
-
-В будущем можно добавить:
-
-сохранение персонажа в файл;
-несколько слотов сохранений;
-инвентарь;
-систему характеристик;
-GUI-интерфейс.
