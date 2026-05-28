@@ -1,10 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace RPG_Character_Editor {
-  internal class History {
+namespace RpgCharacterEditor {
+  public class History {
+    private Stack<CharacterMemento> _history = new Stack<CharacterMemento>();
+
+    public void Save(CharacterMemento memento) {
+      _history.Push(memento);
+    }
+
+    public CharacterMemento Undo() {
+      if (_history.Count == 0) {
+        return null;
+      }
+
+      return _history.Pop();
+    }
+
+    public bool HasHistory() {
+      return _history.Count > 0;
+    }
   }
 }
